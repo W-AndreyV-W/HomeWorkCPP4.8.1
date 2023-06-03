@@ -18,7 +18,7 @@ public:
 
     tridiagonal_matrix& clone() {
         auto trid_matrix = std::make_unique<tridiagonal_matrix>(m_down, m_upper, m_middle);
-        return *trid_matrix.release();
+        return *trid_matrix;
     }
 };
 
